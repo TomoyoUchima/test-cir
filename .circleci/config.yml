@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:4.8.2 # circleci/node:4.8.2というイメージを利用したDocker環境を立ち上げ
     steps:
-      - checkout
-      - run: echo "hello world"
+      - checkout #CircleCIがGitHubリポジトリをチェックアウトして上記Docker環境にリポジトリをクローン
+      - run: echo "hello world" #echo "hello world"を実行
